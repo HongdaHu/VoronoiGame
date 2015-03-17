@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB5CA1C21AB7F61F00BE80CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1C11AB7F61F00BE80CB /* Foundation.framework */; };
+		EB5CA1C41AB7F61F00BE80CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1C31AB7F61F00BE80CB /* CoreGraphics.framework */; };
+		EB5CA1C61AB7F61F00BE80CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1C51AB7F61F00BE80CB /* UIKit.framework */; };
+		EB5CA1CC1AB7F62000BE80CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB5CA1CA1AB7F62000BE80CB /* InfoPlist.strings */; };
+		EB5CA1CE1AB7F62000BE80CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CA1CD1AB7F62000BE80CB /* main.m */; };
+		EB5CA1D21AB7F62000BE80CB /* HHDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CA1D11AB7F62000BE80CB /* HHDAppDelegate.m */; };
+		EB5CA1D51AB7F62000BE80CB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5CA1D31AB7F62000BE80CB /* Main_iPhone.storyboard */; };
+		EB5CA1D81AB7F62000BE80CB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5CA1D61AB7F62000BE80CB /* Main_iPad.storyboard */; };
+		EB5CA1DB1AB7F62000BE80CB /* HHDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CA1DA1AB7F62000BE80CB /* HHDViewController.m */; };
+		EB5CA1DD1AB7F62000BE80CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5CA1DC1AB7F62000BE80CB /* Images.xcassets */; };
+		EB5CA1E41AB7F62000BE80CB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1E31AB7F62000BE80CB /* XCTest.framework */; };
+		EB5CA1E51AB7F62000BE80CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1C11AB7F61F00BE80CB /* Foundation.framework */; };
+		EB5CA1E61AB7F62000BE80CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1C51AB7F61F00BE80CB /* UIKit.framework */; };
+		EB5CA1EE1AB7F62000BE80CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB5CA1EC1AB7F62000BE80CB /* InfoPlist.strings */; };
+		EB5CA1F01AB7F62000BE80CB /* VoronoiGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CA1EF1AB7F62000BE80CB /* VoronoiGameTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB5CA1E71AB7F62000BE80CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB5CA1B61AB7F61F00BE80CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB5CA1BD1AB7F61F00BE80CB;
+			remoteInfo = VoronoiGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB5CA1BE1AB7F61F00BE80CB /* VoronoiGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoronoiGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5CA1C11AB7F61F00BE80CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB5CA1C31AB7F61F00BE80CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB5CA1C51AB7F61F00BE80CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB5CA1C91AB7F62000BE80CB /* VoronoiGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VoronoiGame-Info.plist"; sourceTree = "<group>"; };
+		EB5CA1CB1AB7F62000BE80CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB5CA1CD1AB7F62000BE80CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB5CA1CF1AB7F62000BE80CB /* VoronoiGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoronoiGame-Prefix.pch"; sourceTree = "<group>"; };
+		EB5CA1D01AB7F62000BE80CB /* HHDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDAppDelegate.h; sourceTree = "<group>"; };
+		EB5CA1D11AB7F62000BE80CB /* HHDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDAppDelegate.m; sourceTree = "<group>"; };
+		EB5CA1D41AB7F62000BE80CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EB5CA1D71AB7F62000BE80CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EB5CA1D91AB7F62000BE80CB /* HHDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDViewController.h; sourceTree = "<group>"; };
+		EB5CA1DA1AB7F62000BE80CB /* HHDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDViewController.m; sourceTree = "<group>"; };
+		EB5CA1DC1AB7F62000BE80CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB5CA1E21AB7F62000BE80CB /* VoronoiGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoronoiGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5CA1E31AB7F62000BE80CB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EB5CA1EB1AB7F62000BE80CB /* VoronoiGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VoronoiGameTests-Info.plist"; sourceTree = "<group>"; };
+		EB5CA1ED1AB7F62000BE80CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB5CA1EF1AB7F62000BE80CB /* VoronoiGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoronoiGameTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB5CA1BB1AB7F61F00BE80CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5CA1C41AB7F61F00BE80CB /* CoreGraphics.framework in Frameworks */,
+				EB5CA1C61AB7F61F00BE80CB /* UIKit.framework in Frameworks */,
+				EB5CA1C21AB7F61F00BE80CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB5CA1DF1AB7F62000BE80CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5CA1E41AB7F62000BE80CB /* XCTest.framework in Frameworks */,
+				EB5CA1E61AB7F62000BE80CB /* UIKit.framework in Frameworks */,
+				EB5CA1E51AB7F62000BE80CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB5CA1B51AB7F61F00BE80CB = {
+			isa = PBXGroup;
+			children = (
+				EB5CA1C71AB7F61F00BE80CB /* VoronoiGame */,
+				EB5CA1E91AB7F62000BE80CB /* VoronoiGameTests */,
+				EB5CA1C01AB7F61F00BE80CB /* Frameworks */,
+				EB5CA1BF1AB7F61F00BE80CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB5CA1BF1AB7F61F00BE80CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB5CA1BE1AB7F61F00BE80CB /* VoronoiGame.app */,
+				EB5CA1E21AB7F62000BE80CB /* VoronoiGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB5CA1C01AB7F61F00BE80CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB5CA1C11AB7F61F00BE80CB /* Foundation.framework */,
+				EB5CA1C31AB7F61F00BE80CB /* CoreGraphics.framework */,
+				EB5CA1C51AB7F61F00BE80CB /* UIKit.framework */,
+				EB5CA1E31AB7F62000BE80CB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB5CA1C71AB7F61F00BE80CB /* VoronoiGame */ = {
+			isa = PBXGroup;
+			children = (
+				EB5CA1D01AB7F62000BE80CB /* HHDAppDelegate.h */,
+				EB5CA1D11AB7F62000BE80CB /* HHDAppDelegate.m */,
+				EB5CA1D31AB7F62000BE80CB /* Main_iPhone.storyboard */,
+				EB5CA1D61AB7F62000BE80CB /* Main_iPad.storyboard */,
+				EB5CA1D91AB7F62000BE80CB /* HHDViewController.h */,
+				EB5CA1DA1AB7F62000BE80CB /* HHDViewController.m */,
+				EB5CA1DC1AB7F62000BE80CB /* Images.xcassets */,
+				EB5CA1C81AB7F62000BE80CB /* Supporting Files */,
+			);
+			path = VoronoiGame;
+			sourceTree = "<group>";
+		};
+		EB5CA1C81AB7F62000BE80CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB5CA1C91AB7F62000BE80CB /* VoronoiGame-Info.plist */,
+				EB5CA1CA1AB7F62000BE80CB /* InfoPlist.strings */,
+				EB5CA1CD1AB7F62000BE80CB /* main.m */,
+				EB5CA1CF1AB7F62000BE80CB /* VoronoiGame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB5CA1E91AB7F62000BE80CB /* VoronoiGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB5CA1EF1AB7F62000BE80CB /* VoronoiGameTests.m */,
+				EB5CA1EA1AB7F62000BE80CB /* Supporting Files */,
+			);
+			path = VoronoiGameTests;
+			sourceTree = "<group>";
+		};
+		EB5CA1EA1AB7F62000BE80CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB5CA1EB1AB7F62000BE80CB /* VoronoiGameTests-Info.plist */,
+				EB5CA1EC1AB7F62000BE80CB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB5CA1BD1AB7F61F00BE80CB /* VoronoiGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB5CA1F31AB7F62000BE80CB /* Build configuration list for PBXNativeTarget "VoronoiGame" */;
+			buildPhases = (
+				EB5CA1BA1AB7F61F00BE80CB /* Sources */,
+				EB5CA1BB1AB7F61F00BE80CB /* Frameworks */,
+				EB5CA1BC1AB7F61F00BE80CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoronoiGame;
+			productName = VoronoiGame;
+			productReference = EB5CA1BE1AB7F61F00BE80CB /* VoronoiGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB5CA1E11AB7F62000BE80CB /* VoronoiGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB5CA1F61AB7F62000BE80CB /* Build configuration list for PBXNativeTarget "VoronoiGameTests" */;
+			buildPhases = (
+				EB5CA1DE1AB7F62000BE80CB /* Sources */,
+				EB5CA1DF1AB7F62000BE80CB /* Frameworks */,
+				EB5CA1E01AB7F62000BE80CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB5CA1E81AB7F62000BE80CB /* PBXTargetDependency */,
+			);
+			name = VoronoiGameTests;
+			productName = VoronoiGameTests;
+			productReference = EB5CA1E21AB7F62000BE80CB /* VoronoiGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB5CA1B61AB7F61F00BE80CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HHD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Hongda;
+				TargetAttributes = {
+					EB5CA1E11AB7F62000BE80CB = {
+						TestTargetID = EB5CA1BD1AB7F61F00BE80CB;
+					};
+				};
+			};
+			buildConfigurationList = EB5CA1B91AB7F61F00BE80CB /* Build configuration list for PBXProject "VoronoiGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB5CA1B51AB7F61F00BE80CB;
+			productRefGroup = EB5CA1BF1AB7F61F00BE80CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB5CA1BD1AB7F61F00BE80CB /* VoronoiGame */,
+				EB5CA1E11AB7F62000BE80CB /* VoronoiGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB5CA1BC1AB7F61F00BE80CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5CA1D81AB7F62000BE80CB /* Main_iPad.storyboard in Resources */,
+				EB5CA1DD1AB7F62000BE80CB /* Images.xcassets in Resources */,
+				EB5CA1D51AB7F62000BE80CB /* Main_iPhone.storyboard in Resources */,
+				EB5CA1CC1AB7F62000BE80CB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB5CA1E01AB7F62000BE80CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5CA1EE1AB7F62000BE80CB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB5CA1BA1AB7F61F00BE80CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5CA1CE1AB7F62000BE80CB /* main.m in Sources */,
+				EB5CA1DB1AB7F62000BE80CB /* HHDViewController.m in Sources */,
+				EB5CA1D21AB7F62000BE80CB /* HHDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB5CA1DE1AB7F62000BE80CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5CA1F01AB7F62000BE80CB /* VoronoiGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB5CA1E81AB7F62000BE80CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB5CA1BD1AB7F61F00BE80CB /* VoronoiGame */;
+			targetProxy = EB5CA1E71AB7F62000BE80CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB5CA1CA1AB7F62000BE80CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB5CA1CB1AB7F62000BE80CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB5CA1D31AB7F62000BE80CB /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB5CA1D41AB7F62000BE80CB /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EB5CA1D61AB7F62000BE80CB /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB5CA1D71AB7F62000BE80CB /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EB5CA1EC1AB7F62000BE80CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB5CA1ED1AB7F62000BE80CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB5CA1F11AB7F62000BE80CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB5CA1F21AB7F62000BE80CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB5CA1F41AB7F62000BE80CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoronoiGame/VoronoiGame-Prefix.pch";
+				INFOPLIST_FILE = "VoronoiGame/VoronoiGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB5CA1F51AB7F62000BE80CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoronoiGame/VoronoiGame-Prefix.pch";
+				INFOPLIST_FILE = "VoronoiGame/VoronoiGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EB5CA1F71AB7F62000BE80CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VoronoiGame.app/VoronoiGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoronoiGame/VoronoiGame-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VoronoiGameTests/VoronoiGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EB5CA1F81AB7F62000BE80CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VoronoiGame.app/VoronoiGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoronoiGame/VoronoiGame-Prefix.pch";
+				INFOPLIST_FILE = "VoronoiGameTests/VoronoiGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB5CA1B91AB7F61F00BE80CB /* Build configuration list for PBXProject "VoronoiGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB5CA1F11AB7F62000BE80CB /* Debug */,
+				EB5CA1F21AB7F62000BE80CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB5CA1F31AB7F62000BE80CB /* Build configuration list for PBXNativeTarget "VoronoiGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB5CA1F41AB7F62000BE80CB /* Debug */,
+				EB5CA1F51AB7F62000BE80CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB5CA1F61AB7F62000BE80CB /* Build configuration list for PBXNativeTarget "VoronoiGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB5CA1F71AB7F62000BE80CB /* Debug */,
+				EB5CA1F81AB7F62000BE80CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB5CA1B61AB7F61F00BE80CB /* Project object */;
+}
