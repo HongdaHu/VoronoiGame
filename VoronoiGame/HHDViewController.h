@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import <UIKit/UIAlertView.h>
 
-@interface HHDViewController : UIViewController
+@interface HHDViewController : UIViewController <UIAlertViewDelegate>
 
 @end

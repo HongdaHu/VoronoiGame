@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB3C2F691AB80C3000AF9115 /* MyView.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB3C2F681AB80C3000AF9115 /* MyView.mm */; };
 		EB5CA1C21AB7F61F00BE80CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1C11AB7F61F00BE80CB /* Foundation.framework */; };
 		EB5CA1C41AB7F61F00BE80CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1C31AB7F61F00BE80CB /* CoreGraphics.framework */; };
 		EB5CA1C61AB7F61F00BE80CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1C51AB7F61F00BE80CB /* UIKit.framework */; };
 		EB5CA1CC1AB7F62000BE80CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB5CA1CA1AB7F62000BE80CB /* InfoPlist.strings */; };
 		EB5CA1CE1AB7F62000BE80CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CA1CD1AB7F62000BE80CB /* main.m */; };
-		EB5CA1D21AB7F62000BE80CB /* HHDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CA1D11AB7F62000BE80CB /* HHDAppDelegate.m */; };
+		EB5CA1D21AB7F62000BE80CB /* HHDAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB5CA1D11AB7F62000BE80CB /* HHDAppDelegate.mm */; };
 		EB5CA1D51AB7F62000BE80CB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5CA1D31AB7F62000BE80CB /* Main_iPhone.storyboard */; };
 		EB5CA1D81AB7F62000BE80CB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5CA1D61AB7F62000BE80CB /* Main_iPad.storyboard */; };
-		EB5CA1DB1AB7F62000BE80CB /* HHDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CA1DA1AB7F62000BE80CB /* HHDViewController.m */; };
+		EB5CA1DB1AB7F62000BE80CB /* HHDViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB5CA1DA1AB7F62000BE80CB /* HHDViewController.mm */; };
 		EB5CA1DD1AB7F62000BE80CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5CA1DC1AB7F62000BE80CB /* Images.xcassets */; };
 		EB5CA1E41AB7F62000BE80CB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1E31AB7F62000BE80CB /* XCTest.framework */; };
 		EB5CA1E51AB7F62000BE80CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1C11AB7F61F00BE80CB /* Foundation.framework */; };
 		EB5CA1E61AB7F62000BE80CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5CA1C51AB7F61F00BE80CB /* UIKit.framework */; };
 		EB5CA1EE1AB7F62000BE80CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB5CA1EC1AB7F62000BE80CB /* InfoPlist.strings */; };
 		EB5CA1F01AB7F62000BE80CB /* VoronoiGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CA1EF1AB7F62000BE80CB /* VoronoiGameTests.m */; };
+		EBA78AD91ADB192300BDFADA /* GamePoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA78AD71ADB192300BDFADA /* GamePoint.cpp */; };
+		EBD256881ABD4BC7001EA51E /* Common.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBD256871ABD4BC7001EA51E /* Common.mm */; };
+		EBE2BA871ABC073F00E4541F /* VoronoiDiagramGenerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBE2BA861ABC073F00E4541F /* VoronoiDiagramGenerator.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB3C2F671AB80C3000AF9115 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		EB3C2F681AB80C3000AF9115 /* MyView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyView.mm; sourceTree = "<group>"; };
 		EB5CA1BE1AB7F61F00BE80CB /* VoronoiGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoronoiGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5CA1C11AB7F61F00BE80CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB5CA1C31AB7F61F00BE80CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,17 +50,23 @@
 		EB5CA1CD1AB7F62000BE80CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB5CA1CF1AB7F62000BE80CB /* VoronoiGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoronoiGame-Prefix.pch"; sourceTree = "<group>"; };
 		EB5CA1D01AB7F62000BE80CB /* HHDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDAppDelegate.h; sourceTree = "<group>"; };
-		EB5CA1D11AB7F62000BE80CB /* HHDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDAppDelegate.m; sourceTree = "<group>"; };
+		EB5CA1D11AB7F62000BE80CB /* HHDAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HHDAppDelegate.mm; sourceTree = "<group>"; };
 		EB5CA1D41AB7F62000BE80CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		EB5CA1D71AB7F62000BE80CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		EB5CA1D91AB7F62000BE80CB /* HHDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDViewController.h; sourceTree = "<group>"; };
-		EB5CA1DA1AB7F62000BE80CB /* HHDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDViewController.m; sourceTree = "<group>"; };
+		EB5CA1DA1AB7F62000BE80CB /* HHDViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HHDViewController.mm; sourceTree = "<group>"; };
 		EB5CA1DC1AB7F62000BE80CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EB5CA1E21AB7F62000BE80CB /* VoronoiGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoronoiGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5CA1E31AB7F62000BE80CB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EB5CA1EB1AB7F62000BE80CB /* VoronoiGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VoronoiGameTests-Info.plist"; sourceTree = "<group>"; };
 		EB5CA1ED1AB7F62000BE80CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB5CA1EF1AB7F62000BE80CB /* VoronoiGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoronoiGameTests.m; sourceTree = "<group>"; };
+		EBA78AD71ADB192300BDFADA /* GamePoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePoint.cpp; sourceTree = "<group>"; };
+		EBA78AD81ADB192300BDFADA /* GamePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePoint.h; sourceTree = "<group>"; };
+		EBD256861ABD4BBF001EA51E /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		EBD256871ABD4BC7001EA51E /* Common.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Common.mm; sourceTree = "<group>"; };
+		EBE2BA851ABC073600E4541F /* VoronoiDiagramGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoronoiDiagramGenerator.h; sourceTree = "<group>"; };
+		EBE2BA861ABC073F00E4541F /* VoronoiDiagramGenerator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoronoiDiagramGenerator.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +127,21 @@
 			isa = PBXGroup;
 			children = (
 				EB5CA1D01AB7F62000BE80CB /* HHDAppDelegate.h */,
-				EB5CA1D11AB7F62000BE80CB /* HHDAppDelegate.m */,
+				EB5CA1D11AB7F62000BE80CB /* HHDAppDelegate.mm */,
 				EB5CA1D31AB7F62000BE80CB /* Main_iPhone.storyboard */,
 				EB5CA1D61AB7F62000BE80CB /* Main_iPad.storyboard */,
+				EBE2BA851ABC073600E4541F /* VoronoiDiagramGenerator.h */,
+				EBE2BA861ABC073F00E4541F /* VoronoiDiagramGenerator.mm */,
 				EB5CA1D91AB7F62000BE80CB /* HHDViewController.h */,
-				EB5CA1DA1AB7F62000BE80CB /* HHDViewController.m */,
+				EB5CA1DA1AB7F62000BE80CB /* HHDViewController.mm */,
 				EB5CA1DC1AB7F62000BE80CB /* Images.xcassets */,
 				EB5CA1C81AB7F62000BE80CB /* Supporting Files */,
+				EB3C2F671AB80C3000AF9115 /* MyView.h */,
+				EB3C2F681AB80C3000AF9115 /* MyView.mm */,
+				EBD256861ABD4BBF001EA51E /* Common.h */,
+				EBD256871ABD4BC7001EA51E /* Common.mm */,
+				EBA78AD71ADB192300BDFADA /* GamePoint.cpp */,
+				EBA78AD81ADB192300BDFADA /* GamePoint.h */,
 			);
 			path = VoronoiGame;
 			sourceTree = "<group>";
@@ -165,6 +185,7 @@
 				EB5CA1BA1AB7F61F00BE80CB /* Sources */,
 				EB5CA1BB1AB7F61F00BE80CB /* Frameworks */,
 				EB5CA1BC1AB7F61F00BE80CB /* Resources */,
+				EB5CA1F91AB7FCB100BE80CB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -249,14 +270,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EB5CA1F91AB7FCB100BE80CB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then /Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\";\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB5CA1BA1AB7F61F00BE80CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE2BA871ABC073F00E4541F /* VoronoiDiagramGenerator.mm in Sources */,
+				EB3C2F691AB80C3000AF9115 /* MyView.mm in Sources */,
 				EB5CA1CE1AB7F62000BE80CB /* main.m in Sources */,
-				EB5CA1DB1AB7F62000BE80CB /* HHDViewController.m in Sources */,
-				EB5CA1D21AB7F62000BE80CB /* HHDAppDelegate.m in Sources */,
+				EBA78AD91ADB192300BDFADA /* GamePoint.cpp in Sources */,
+				EB5CA1DB1AB7F62000BE80CB /* HHDViewController.mm in Sources */,
+				EBD256881ABD4BC7001EA51E /* Common.mm in Sources */,
+				EB5CA1D21AB7F62000BE80CB /* HHDAppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,9 +432,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VoronoiGame/VoronoiGame-Prefix.pch";
 				INFOPLIST_FILE = "VoronoiGame/VoronoiGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,9 +448,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VoronoiGame/VoronoiGame-Prefix.pch";
 				INFOPLIST_FILE = "VoronoiGame/VoronoiGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -471,6 +518,7 @@
 				EB5CA1F51AB7F62000BE80CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB5CA1F61AB7F62000BE80CB /* Build configuration list for PBXNativeTarget "VoronoiGameTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +527,7 @@
 				EB5CA1F81AB7F62000BE80CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
